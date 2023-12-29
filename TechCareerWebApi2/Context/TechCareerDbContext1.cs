@@ -11,5 +11,7 @@ namespace TechCareerWebApi2.Context
             optionsBuilder.UseSqlServer("Server=KURSAD;Database=TechCareerDb1; trusted_connection=true");
         }
         public DbSet<Employee1> Employees1 { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }

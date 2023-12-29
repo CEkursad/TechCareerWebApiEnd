@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TechCareerWebApi2.Context;
 
@@ -11,9 +12,10 @@ using TechCareerWebApi2.Context;
 namespace TechCareerWebApi2.Migrations
 {
     [DbContext(typeof(TechCareerDbContext1))]
-    partial class TechCareerDbContext1ModelSnapshot : ModelSnapshot
+    [Migration("20231229183044_test")]
+    partial class test
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

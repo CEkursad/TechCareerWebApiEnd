@@ -14,5 +14,7 @@ namespace TechCareerWebApi2.Models
         public string EMail { get; set; } = string.Empty;
 
         public Address Address { get; set; }
+
+
     }
 }
